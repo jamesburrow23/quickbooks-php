@@ -83,9 +83,9 @@ class QuickBooks_Driver_Factory
 			{
 				$scheme = ucfirst(strtolower($scheme));
 			}
-				
-			$class = 'QuickBooks_Driver_' . $scheme;
-			$file = '/QuickBooks/Driver/' . str_replace(' ', '/', ucwords(str_replace('_', ' ', strtolower($scheme)))) . '.php';
+
+            $class = 'QuickBooks_Driver_Sql_Mysqli';
+            $file = '/QuickBooks/Driver/Sql/Mysqli.php';
 
 			//print('class: ' . $class . "\n");
 			//print('file: ' . $file . "\n");
